@@ -1,0 +1,42 @@
+.btn{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px;
+  color:#fff;
+  cursor: pointer;
+}
+
+.bg-red{
+  background-color: red;
+}
+
+.bg-green{
+  background-color: green;
+}
+
+.bg-black{
+  background-color: black;
+}
+
+.cnt{
+  width: 100px;
+  background-color: gray;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text{
+  text-align: center;
+}
