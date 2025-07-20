@@ -7,32 +7,11 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+
 export class App {
-  count: number = 0;
-
-  // handleIncrement(){
-  //   this.count = this.count + 1
-  // }
-
-  // handleDecrement(){
-  //   this.count = this.count-1
-  // }
-
-  // handleReset(){
-  //   this.count= 0
-  // }
-
-  handleCounter(val:string){
-    if(val == 'minus'){
-      if(this.count > 0){
-      this.count = this.count -1 
-      }
-    }
-    else if( val == 'plus'){
-      this.count = this.count +1
-    }
-    else{
-      this.count = 0
-    }
+  handleEvent(event:Event){
+    console.log("function called", event.type);
+    // console.log("value",(event.target as HTMLInputElement).value);
+    
   }
 }
