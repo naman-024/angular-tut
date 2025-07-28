@@ -9,9 +9,23 @@ import { RouterOutlet } from '@angular/router';
 })
 
 export class App {
-  handleEvent(event:Event){
-    console.log("function called", event.type);
-    // console.log("value",(event.target as HTMLInputElement).value);
-    
+  name =""
+  displayName="";
+  email="";
+  getName(event:Event){
+    const val=(event.target as HTMLInputElement).value
+    this.name = val;
+}
+  showName(){
+    this.displayName = this.name
+  }
+  setName(){
+    this.name="Sam"
+  }
+  getEmail(val:string){
+    this.email = val;
+  }
+  setEmail(){
+    this.email= "naman@gmail.com"
   }
 }
