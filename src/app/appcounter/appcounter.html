@@ -1,0 +1,11 @@
+<div class="counter-app">
+    <h1>App counter Practice</h1>
+    
+    <h2 >{{count}}</h2>
+    
+    <div class="buttons">
+      <button [hidden]="count === 0 " (click)="counter('decrement')">Decrement</button>
+      <button [hidden]="count === 0 " (click)="counter('reset')">Reset</button>
+      <button (click)="counter('increment')">Increment</button>
+    </div>
+</div>

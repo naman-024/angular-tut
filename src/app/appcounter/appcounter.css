@@ -1,0 +1,10 @@
+.counter-app{
+  text-align: center;
+}
+.counter-app h1{
+  background-color:green;
+}
+
+.buttons{
+  border: 2px solid black;
+}
