@@ -15,7 +15,20 @@ export class App {
   displayName="";
   email="";
   display = true;
-  x=2;
+  displaytwo = true;
+  x=10;
+
+  colors:any;
+
+  TOGGLE(){
+    this.display =! this.display;
+  }
+  Hiddee(){
+    this.display = false;
+  }
+  showww(){
+    this.display =true;
+  }
   getName(event:Event){
     const val=(event.target as HTMLInputElement).value
     this.name = val;
@@ -31,5 +44,17 @@ export class App {
   }
   setEmail(){
     this.email= "naman@gmail.com"
+  }
+
+  toggletwo(){
+    this.displaytwo =! this.displaytwo;
+  }
+
+  getcolorinput(val: number){
+    this.colors = val;
+  }
+
+  handlecolor(event:Event){
+    this.colors = parseInt((event.target as HTMLInputElement).value);
   }
 }

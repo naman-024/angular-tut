@@ -15,7 +15,48 @@
 
 <app-appcounter></app-appcounter>
 
+<button (click)="Hiddee()">HIDE DIV</button>
+<button (click)="showww()">SHOW DIV</button>
+<button (click)="TOGGLE()">TOGGLE DIV</button>
+
+@if(display){
+  <div style="background-color:blue; height:100px; width: 100px; "></div>
+}
+
 @if(x==2){
-  <div style="background-color:blue; height:10px; "></div>
+  <div style="background-color:blue; height:100px; width: 100px; "></div>
+}
+
+
+<button (click)="toggletwo()">{{displaytwo ? 'show red div' : 'show gold div'}}</button>
+
+@if(displaytwo){
+  <div style="background-color: gold; height: 100px ; width: 100px ;"></div>
+}
+@else{
+  <div style="background-color: red; height: 100px ; width: 100px ;"></div>
+}
+
+
+<h1 style="text-align: center;">ELSE IF | CONTROL FLOW</h1>
+<input type="text"  (input)="handlecolor($event);">
+<button (click)="getcolorinput(1)">Red</button>
+<button (click)="getcolorinput(2)">Green</button>
+<button (click)="getcolorinput(3)">Yellow</button>
+<button (click)="getcolorinput(4)">Others</button>
+
+<div>{{colors}}</div>
+
+
+<!-- <div style="background-color:{{colors}}"></div> -->
+
+@if(colors == 1){<div style="background-color: red; height: 100px ; width: 100px ;"></div>
+}
+@else if (colors == 2) {<div style="background-color: green; height: 100px ; width: 100px ;"></div>
+}
+@else if (colors == 3) { <div style="background-color: yellow; height: 100px ; width: 100px ;"></div>
+}
+@else {
+  <div style="background-color: black; height: 100px ; width: 100px ;"></div>
 }
 
